@@ -6,7 +6,7 @@ class RootishArayStack():
         i = len(N)
         self.n = i
         b = self.i2b(i)
-        self.array = [[-1 for _ in range(j+1)] for j in range(b+1)]
+        self.array = [[-1]*(j+1) for j in range(b+1)]
         p = 0
         for l,j in enumerate(self.array):
             i -= len(j)
